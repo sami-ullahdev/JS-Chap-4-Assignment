@@ -1,29 +1,38 @@
 // Question No 01
-var age = "17";
+// Three Variable in One Line
+var name, age, certification;
+name = "Sami Ullah";
+age = "17";
+certification = "MERN STAKE DEVELOPER";
 function showAlert1() {
-    alert("I am " + age + " yeard old");
+    alert("Name: "+ name + "\nAge: " + age + "\ncertification: " + certification)
 };
 
 // Question 02
-var visitCount = "0";
+// 05 Leagel Names
+var u1 = "samiUllah1";
+var u_2 = "ahmed_Qurashi2";
+var $u3 = "$ehalAtiq3";
+var u_1City = "karachi3No";
+var $user2City = "$lahore";
+
+// 05 illegal Names
+var illegalNames = "1user, user name, @age, #5sami, STU1DENT$";
+
 function showAlert2() {
-    visitCount++;
-    alert("You have visited this site " + visitCount + " times")
+    alert(
+        "5 legal Name of JavaScript\n" +
+        u1 + "\n" + u_2 + "\n" + $u3 + "\n" + u_1City + "\n" + $user2City + "\n" + "\n" + "05 illegal Name of JavaScript\n" + illegalNames
+    )
 };
 
 // Question 03
-var birthYear = "2008";
 function showAlert3() {
-    document.write("My Birth Year Is " + birthYear + "</br>")
-        + document.write("Data type of my declared variable is " + typeof (birthYear));
-};
-
-// Question 04
-
-function showAlert4() {
-    var name = prompt("Name");
-    var quantity = prompt("Quantity");
-    var productTitle = prompt("Product Title");
-    document.write(name + " ordered " + quantity + productTitle + " on XYZ Clothing store ")
-
+    let newPage = window.open("", "_blank");
+    
+    newPage.document.write("<h1>Rules for naming JS variables</h1>")
+    newPage.document.write("Variable names can only contain Letters , Numbers , $ And _.</br>")
+    newPage.document.write("Variables must begin with a $name , _name or name1.</br>")
+    newPage.document.write("Variable names are case sensitive.<br>");
+    newPage.document.write("Variable names should not be JS keywords.");
 };
